@@ -1,11 +1,11 @@
-import "./App.css";
-
+import "./styles.js";
+import { Title } from "./styles.js";
 function App() {
   return (
     <>
       <div className="App">
         <header>
-          <h1 className="text-red">text</h1>
+          <Title>aaaa</Title>
         </header>
       </div>
     </>
