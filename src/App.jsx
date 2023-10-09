@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Login } from "./pages/Login/index.jsx"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Login } from "./pages/Login/index.jsx";
 import "./styles.js";
-import "./styles/global.css"
+import "./styles/global.css";
 function App() {
 
   return (
@@ -9,6 +9,7 @@ function App() {
       <Router>
         <Routes > 
           <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Login/>} />
         </Routes>
       </Router>
     </>
