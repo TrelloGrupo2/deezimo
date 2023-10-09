@@ -5,3 +5,8 @@ export const Title = styled.h1`
   text-align: center;
   color: #BF4F74;
 `;
+
+export const Caixa = styled.div`
+    background: purple;
+    width: auto;
+`

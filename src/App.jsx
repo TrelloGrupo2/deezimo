@@ -1,13 +1,10 @@
+import { Home } from "./pages/Home/index.jsx";
 import "./styles.js";
-import { Title } from "./styles.js";
 function App() {
+
   return (
     <>
-      <div className="App">
-        <header>
-          <Title>aaaa</Title>
-        </header>
-      </div>
+      <Home/>
     </>
   );
 }
