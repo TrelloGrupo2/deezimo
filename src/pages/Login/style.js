@@ -1,5 +1,24 @@
 import styled from "styled-components";
 
+export const Title = styled.h2`
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`;
+
+export const Description = styled.span`
+  color: #eee;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 2rem 0;
+`;
+
 export const Container = styled.div`
     width:100%;
     display: flex;
@@ -17,7 +36,7 @@ export const FormLogin = styled.form`
 `
 
 export const Input = styled.input`
-  width: 40%;
+  width: 30%;
   height: 45px;
   background: #292c2e;
   border: none;
@@ -26,4 +45,5 @@ export const Input = styled.input`
   color: #fff;
   font-size: 15px;
   padding: 0 0.8rem;
+  border-radius: 4px;
 `;
