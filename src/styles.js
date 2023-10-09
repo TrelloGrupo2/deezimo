@@ -12,4 +12,6 @@ export const Navbar = styled.nav`
     max-width: 100%;
     height: 50px;
     align-items: center;
+    padding: 2rem;
+    color: #fff;
 `

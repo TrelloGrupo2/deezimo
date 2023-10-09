@@ -1,5 +1,14 @@
 import { MainBG, Navbar } from "../../styles";
-import { Container, Description, FormLogin, Input, Title } from "./style";
+import {
+  BorderTop,
+  Button,
+  Container,
+  Description,
+  FormLogin,
+  Input,
+  LinkLogin,
+  Title,
+} from "./style";
 
 export function Login() {
   return (
@@ -14,6 +23,13 @@ export function Login() {
             <Description>Gerencie suas compras, presenteie e mais!</Description>
             <Input placeholder="email" type="email" />
             <Input placeholder="senha" type="password" />
+            <LinkLogin>Esqueceu a senha ?</LinkLogin>
+            <Button>Entrar</Button>
+            <BorderTop />
+            <Description>
+              Não tem uma conta? 
+              <LinkLogin> Registre-se</LinkLogin>
+            </Description>
           </FormLogin>
         </Container>
       </MainBG>

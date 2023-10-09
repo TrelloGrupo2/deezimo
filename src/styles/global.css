@@ -3,4 +3,9 @@
     margin: 0;
     border: none;
     background: #232526;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
 }
