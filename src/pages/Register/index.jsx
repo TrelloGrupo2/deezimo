@@ -27,10 +27,6 @@ export function Register() {
             <Input placeholder="Repita a sua senha" type="password" />
             <Button>Concluir Cadastro</Button>
             <BorderTop />
-            <Description>
-              Não tem uma conta? 
-              <LinkLogin> Registre-se</LinkLogin>
-            </Description>
           </FormLogin>
         </Container>
       </MainBG>
