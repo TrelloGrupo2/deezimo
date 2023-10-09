@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: #BF4F74;
-`;
+export const MainBG = styled.div`
+background: #232526;
+width: 100%;
+height: 100%;
+position: relative;
+`
 
-export const Caixa = styled.div`
-    background: purple;
-    width: auto;
+export const Navbar = styled.nav`
+display: flex;
+max-width: 100%;
+background-color: blue;
+height: 50px;
+align-items: center;
 `
