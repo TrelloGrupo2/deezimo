@@ -25,6 +25,7 @@ export function Register() {
             <Input placeholder="Repita o seu email" type="email" />
             <Input placeholder="Digite a sua melhor senha" type="password" />
             <Input placeholder="Repita a sua senha" type="password" />
+            <Input type="date" name="" id="" />
             <Button>Concluir Cadastro</Button>
             <BorderTop />
             <Description>
