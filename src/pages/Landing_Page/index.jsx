@@ -1,46 +1,63 @@
-export function LandingPage() {
+import { 
+  Header,
+  TitleContainer,
+  HeaderContainer,
+  LinksContainer,
+  ListLinks,
+  HeaderLink,
+  YourWishlistButtonContainer,
+
+  Content,
+  SloganContainer,
+  TitleContainerSlogan,
+  StartButtonContainer,
+  StartButton,
+  YourWishlistButton,
+} from "./style";
+
+export function Home() {
   return (
     <>
-      <header class="header">
-        <div class="headerContainer">
-          <div class="titleContainer">
+      <Header>
+        <HeaderContainer>
+          <TitleContainer>
             <h1>Deezimo</h1>
-          </div>
-          <div class="linksContainer">
-            <ul>
+          </TitleContainer>
+          <LinksContainer>
+            <ListLinks>
               <li>
-                <a href="#" class="contactUsLink headerLink">
+                <HeaderLink>
                   Contato
-                </a>
+                </HeaderLink>
               </li>
               <li>
-                <a href="#" class="loginLink headerLink">
+                <HeaderLink>
                   Entrar
-                </a>
+                </HeaderLink>
               </li>
-              <li class="yourWishlistButtonContainer headerLink">
-                <a href="#" class="yourWishlistButton">
+              <YourWishlistButtonContainer>
+                <YourWishlistButton>
                   Sua Wishlist
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+                 </YourWishlistButton>
+              </YourWishlistButtonContainer>
+            </ListLinks>
+          </LinksContainer>
+        </HeaderContainer>
+      </Header>
 
-      <div class="content">
-        <div class="sloganContainer">
-          <div class="titleContainerSlogan">
+      <Content>
+        <SloganContainer>
+          <TitleContainerSlogan>
             <h1>
               Escolha seus produtos favoritos & deixe que os outros te
               surpreendam!
             </h1>
-          </div>
-          <div class="startButtonContainer">
-            <button class="startButton">Começar</button>
-          </div>
-        </div>
-      </div>
+          </TitleContainerSlogan>
+          <StartButtonContainer>
+            <StartButton>Começar</StartButton>
+          </StartButtonContainer>
+        </SloganContainer>
+      </Content>
     </>
   );
 }
