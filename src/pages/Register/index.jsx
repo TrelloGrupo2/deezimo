@@ -25,11 +25,12 @@ export function Register() {
             <Input placeholder="Repita o seu email" type="email" />
             <Input placeholder="Digite a sua melhor senha" type="password" />
             <Input placeholder="Repita a sua senha" type="password" />
+            <Input type="date" name="" id="" />
             <Button>Concluir Cadastro</Button>
             <BorderTop />
             <Description>
-              Não tem uma conta? 
-              <LinkLogin> Registre-se</LinkLogin>
+              Ja tem uma conta?
+              <LinkLogin> Login</LinkLogin>
             </Description>
           </FormLogin>
         </Container>
