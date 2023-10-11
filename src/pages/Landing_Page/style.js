@@ -64,8 +64,6 @@ color: white;
     background-color: #5B606B;
     padding: 0.8em 0.8em;
     border-radius: 20px;
-    
-
 `
 export const YourWishlistButtonContainer = styled.li`
      display: flex;

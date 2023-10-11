@@ -31,7 +31,7 @@ export function Home() {
                 </HeaderLink>
               </li>
               <li>
-                <HeaderLink>
+                <HeaderLink href="../Login">
                   Entrar
                 </HeaderLink>
               </li>

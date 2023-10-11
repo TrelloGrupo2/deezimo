@@ -28,7 +28,7 @@ export function Login() {
             <BorderTop />
             <Description>
               Não tem uma conta? 
-              <LinkLogin> Registre-se</LinkLogin>
+              <LinkLogin href="../Register"> Registre-se</LinkLogin>
             </Description>
           </FormLogin>
         </Container>
