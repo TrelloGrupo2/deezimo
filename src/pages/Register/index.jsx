@@ -30,7 +30,7 @@ export function Register() {
             <BorderTop />
             <Description>
               Ja tem uma conta?
-              <LinkLogin> Login</LinkLogin>
+              <LinkLogin href="../Login"> Login</LinkLogin>
             </Description>
           </FormLogin>
         </Container>
