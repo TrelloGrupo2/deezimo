@@ -29,6 +29,11 @@ export const Description = styled.span`
   }
 `;
 
+export const ErrorMessage = styled.p`
+  color: red;
+  font-size: 18px;
+`
+
 export const LinkLogin = styled.a`
   color: #2d5ff5;
   font-family: Open Sans;
