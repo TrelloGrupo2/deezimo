@@ -1,9 +1,18 @@
-import { BarContainer, FillerBackground, Filter, TextValue, Wrapper } from './style';
+import {
+  BarContainer,
+  FillerBackground,
+  Filter,
+  Text,
+  TextValue,
+  Wrapper,
+} from "./style";
 
 export const ProgressBar = (props) => {
-  const { value } = props;
+  console.log(props);
+  const value = props.progress;
   const fillerRelativePercentage = (100 / value) * 100;
-    console.log(value);
+
+  console.log(fillerRelativePercentage);
   return (
     <Wrapper
       role="progressbar"
@@ -16,7 +25,9 @@ export const ProgressBar = (props) => {
           <FillerBackground style={{ width: `${fillerRelativePercentage}%` }} />
         </Filter>
       </BarContainer>
-      <TextValue className="textValue">{`${value}%`}</TextValue>
+      <TextValue>
+        <Text>{`${value}%`}</Text>
+      </TextValue>
     </Wrapper>
   );
 };

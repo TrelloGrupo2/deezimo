@@ -6,6 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, span, strong, a {
+    background: transparent;
+}
+
 @font-face {
     font-family: 'Open Sans', sans-serif;
 }

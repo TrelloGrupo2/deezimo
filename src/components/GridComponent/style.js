@@ -5,6 +5,10 @@ export const GridContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Grid = styled.div`
@@ -15,22 +19,53 @@ export const Grid = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  border-radius: 4px;
+  filter: drop-shadow(0px 7px 8px rgba(0, 0, 0, 0.45));
+  @media (max-width: 476px) {
+    width: 83%;
+  }
+  @media (max-width: 768px) {
+    width: 55%;
+  }
 `;
 
 export const Image = styled.img`
-    width: 100px;
-    height: 100px;
-    background: transparent;
-`
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  background: transparent;
+  filter: drop-shadow(0px 7px 8px rgba(0, 0, 0, 0.25));
+`;
 
 export const Title = styled.h3`
-  font-size: 18px;
-  color: #fff;
-  background:transparent ;
-`
-
-export const Description = styled.span`
-  font-size: 14px;
+  font-size: 24px;
   color: #fff;
   background: transparent;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+`;
+
+export const Description = styled.span`
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+  background: transparent;
+`;
+
+export const Button = styled.a`
+  border-radius: 4px 4px 0px 0px;
+  background: #6776ff;
+  width: 100%;
+  margin-top: 43px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
 `;

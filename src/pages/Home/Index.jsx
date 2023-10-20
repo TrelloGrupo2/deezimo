@@ -10,8 +10,14 @@ export function Home() {
           <h1>Deezimo</h1>
         </Navbar>
         <Container>
-          <Title>Produtos Mais Populares</Title>
-          <GridComponent/>
+          <Container>
+            <Title>Listas Mais Populares</Title>
+            <GridComponent />
+          </Container>
+          <Container style={{ marginTop: "50px" }}>
+            <Title>Listas Quase Concluidas</Title>
+            <GridComponent />
+          </Container>
         </Container>
       </MainBG>
     </>

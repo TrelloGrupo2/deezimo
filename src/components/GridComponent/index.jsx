@@ -1,26 +1,33 @@
 import { ProgressBar } from "../ProgressbarComponent";
-import { Description, Grid, GridContainer, Image, Title } from "./style";
+import {
+  Button,
+  Description,
+  Grid,
+  GridContainer,
+  Image,
+  Title,
+} from "./style";
 export function GridComponent() {
   const WishList = [
     {
       id: 1,
       UserName: "Cellbit",
       PriceVariation: "R$90 - R$520",
-      ProgressBar: 85,
+      ProgressBar: 10,
       Image: "/images/user-icon.png",
     },
     {
       id: 2,
       UserName: "Alanzoka",
       PriceVariation: "R$90 - R$520",
-      ProgressBar: 85,
+      ProgressBar: 33,
       Image: "/images/user-icon.png",
     },
     {
       id: 3,
       UserName: "xXHerinquezXx",
       PriceVariation: "R$90 - R$520",
-      ProgressBar: 85,
+      ProgressBar: 90,
       Image: "/images/user-icon.png",
     },
   ];
@@ -33,7 +40,10 @@ export function GridComponent() {
           <Title>{list.UserName}</Title>
           <Description>Price Variation</Description>
           <Description>{list.PriceVariation}</Description>
-          <ProgressBar props={80} />
+          <ProgressBar progress={list.ProgressBar} />
+          <Button>
+            <span>Visitar Lista</span>
+          </Button>
         </Grid>
       ))}
     </GridContainer>
