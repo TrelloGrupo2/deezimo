@@ -8,7 +8,6 @@ import {
 } from "./style";
 
 export const ProgressBar = (props) => {
-  console.log(props);
   const value = props.progress;
   const fillerRelativePercentage = (100 / value) * 100;
 

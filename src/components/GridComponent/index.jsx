@@ -13,7 +13,7 @@ export function GridComponent() {
       id: 1,
       UserName: "Cellbit",
       PriceVariation: "R$90 - R$520",
-      ProgressBar: 10,
+      ProgressBar: 100,
       Image: "/images/user-icon.png",
     },
     {

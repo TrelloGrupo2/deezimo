@@ -1,14 +1,13 @@
 import { GridComponent } from "../../components/GridComponent";
-import { MainBG, Navbar } from "../../styles";
+import { HeaderComponent } from "../../components/Header";
+import { MainBG } from "../../styles";
 import { Container, Title } from "./style";
 
 export function Home() {
   return (
     <>
       <MainBG>
-        <Navbar>
-          <h1>Deezimo</h1>
-        </Navbar>
+        <HeaderComponent/>
         <Container>
           <Container>
             <Title>Listas Mais Populares</Title>

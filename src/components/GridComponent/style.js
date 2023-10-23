@@ -12,17 +12,20 @@ export const GridContainer = styled.div`
 `;
 
 export const Grid = styled.div`
-  width: 15%;
+  width: 23%;
   background: #292c2e;
   margin: 20px 64px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 8px;
   filter: drop-shadow(0px 7px 8px rgba(0, 0, 0, 0.45));
   @media (max-width: 476px) {
     width: 83%;
+  }
+  @media (max-width: 768px) {
+    width: 55%;
   }
   @media (max-width: 768px) {
     width: 55%;
@@ -54,18 +57,21 @@ export const Description = styled.span`
 `;
 
 export const Button = styled.a`
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px;
   background: #6776ff;
   width: 100%;
   margin-top: 43px;
-  height: 36px;
+  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
+  &:hover {
+    opacity: 80%;
+  }
   span {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
   }
 `;
