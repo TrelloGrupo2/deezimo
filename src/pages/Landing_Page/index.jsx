@@ -1,21 +1,20 @@
-import { 
+import {
+  Content,
   Header,
-  TitleContainer,
   HeaderContainer,
+  HeaderLink,
   LinksContainer,
   ListLinks,
-  HeaderLink,
-  YourWishlistButtonContainer,
-
-  Content,
   SloganContainer,
-  TitleContainerSlogan,
-  StartButtonContainer,
   StartButton,
+  StartButtonContainer,
+  TitleContainer,
+  TitleContainerSlogan,
   YourWishlistButton,
+  YourWishlistButtonContainer,
 } from "./style";
 
-export function Home() {
+export function Lp() {
   return (
     <>
       <Header>
