@@ -20,7 +20,7 @@ export function GridComponent() {
       id: 2,
       UserName: "Alanzoka",
       PriceVariation: "R$90 - R$520",
-      ProgressBar: 33,
+      ProgressBar: 45,
       Image: "/images/user-icon.png",
     },
     {

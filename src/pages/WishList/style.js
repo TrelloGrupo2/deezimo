@@ -3,19 +3,21 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 export const UserContent = styled.div`
-  width: 50%;
+  padding: 0 2rem;
+  width: 30%;
   display: flex;
   justify-content: start;
   padding-left: 1em;
 `;
 
+
 export const UserContainer = styled.div`
-  width: 40%;
+  width: 60%;
   background: #292c2e;
   display: flex;
   justify-content: center;
@@ -31,6 +33,10 @@ export const AvatarUser = styled.div`
   border-radius: 50%;
   background: #d9d9d9;
 `;
+
+export const ImageAvatarUser = styled.img`
+  border-radius: 50%;
+`
 
 export const Title = styled.h2`
   margin-top: 1em;
@@ -57,4 +63,12 @@ export const PriceSpan = styled.span`
     margin-top: 1em;
 `
 
-export const Progress = styled.div``
+
+export const ButtonCreateList = styled.button`
+  background: #0F982D;
+  color: #fff;
+  width: 50%;
+  height: 60px;
+  border-radius: 14px;
+`;
+

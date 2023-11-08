@@ -25,7 +25,7 @@ export function HeaderComponent() {
               <HeaderLink href="../Login">Entrar</HeaderLink>
             </li>
             <YourWishlistButtonContainer>
-              <YourWishlistButton>Sua Wishlist</YourWishlistButton>
+              <YourWishlistButton href="/lista">Sua Wishlist</YourWishlistButton>
             </YourWishlistButtonContainer>
           </ListLinks>
         </LinksContainer>
