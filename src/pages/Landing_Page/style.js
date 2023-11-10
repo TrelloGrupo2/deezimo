@@ -84,19 +84,18 @@ export const YourWishlistButtonContainer = styled.li`
  
 export const Content = styled.div`
      display:flex;
-     align-items: center;
-     justify-content: center;
+     padding-left: 10em;
  `
 
 
 export const SloganContainer = styled.div`
-      padding-top: 6em;
+      padding-top: 15em;
+      
 `
 
 export const  TitleContainerSlogan = styled.div`
      height: auto;
      width: 36em;
-     text-align:center;
      h1{
         color: white;
      }
@@ -112,8 +111,21 @@ export const StartButton = styled.button`
      background-color: #2A41FA;
      color: white;
      padding: 0.5em 2em;
-     border-radius: 20px;
+     border-radius: 8px;
      &:hover{
         opacity: 80%;
      }
+`
+export const Elemento = styled.div `
+     display: flex;
+     max-width: 100%;
+     padding-left: 45em;
+`
+
+export const HIWContent = styled.div `
+     display: flex;
+
+`
+export const HIWText = styled.div `
+
 `
