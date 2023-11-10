@@ -4,6 +4,7 @@ import { Register } from "./pages/Register/index.jsx";
 
 import { Home } from "./pages/Home/Index.jsx";
 import { WishList } from "./pages/WishList/index.jsx";
+import {ProfileSettings} from "./pages/Profile_Settings/index.jsx"
 import "./styles.js";
 import "./styles/global.css";
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/" element={<Home/>} />
           <Route path="/lista" element={<WishList/>} />
+          <Route path="/profilesettings" element={<ProfileSettings/>} />
         </Routes>
       </Router>
     </>
