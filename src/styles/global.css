@@ -13,3 +13,7 @@ h1, h2, h3, span, strong, a {
 @font-face {
     font-family: 'Open Sans', sans-serif;
 }
+
+*:focus {
+    outline: none;
+}
