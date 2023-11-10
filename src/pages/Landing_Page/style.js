@@ -45,7 +45,7 @@ color: white;
     opacity: 80%;
 }
 `
-    
+
 export const HeaderContainer = styled.div`
 width: 100%;
 display:flex;
@@ -80,11 +80,11 @@ export const YourWishlistButtonContainer = styled.li`
 
 
 
- 
- 
+
+
 export const Content = styled.div`
      display:flex;
-     padding-left: 10em;
+     padding-left: 3em;
  `
 
 
@@ -93,7 +93,7 @@ export const SloganContainer = styled.div`
       
 `
 
-export const  TitleContainerSlogan = styled.div`
+export const TitleContainerSlogan = styled.div`
      height: auto;
      width: 36em;
      h1{
@@ -116,16 +116,58 @@ export const StartButton = styled.button`
         opacity: 80%;
      }
 `
-export const Elemento = styled.div `
+export const Elemento = styled.div`
      display: flex;
      max-width: 100%;
      padding-left: 45em;
-`
-
-export const HIWContent = styled.div `
-     display: flex;
 
 `
-export const HIWText = styled.div `
 
+export const HIWContent = styled.div`
+    display: flex;
+    padding-top: 8em;
+
+    flex-direction: column;
+    align-items: center;
+        h1 {
+            color: #FFF;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+`
+export const HIWText = styled.div`
+     width: 482px;
+     height: 100px;
+     padding-top: 3em;
+     padding-bottom: 10em;
+        p {
+            color: #FFF;
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+`
+
+export const HIWImages = styled.div`
+        display: flex;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding-bottom: 10em;
+`
+
+export const HIWImgContents = styled.div`
+        display: flex;
+        width: 311px:
+        height: 311px;
+        border-radius: 4px;
+        opacity: 85%
 `
