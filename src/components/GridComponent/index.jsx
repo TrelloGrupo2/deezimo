@@ -42,7 +42,7 @@ export function GridComponent() {
           <Description>{list.PriceVariation}</Description>
           <ProgressBar progress={list.ProgressBar} />
           <Button>
-            <span>Visitar Lista</span>
+            <a style={{textDecoration: "none", color: "#fff"}} href="/complete">Visitar Lista</a>
           </Button>
         </Grid>
       ))}

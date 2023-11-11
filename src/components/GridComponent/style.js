@@ -65,6 +65,8 @@ export const Button = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none !important;
+
   cursor: pointer;
   &:hover {
     opacity: 80%;
