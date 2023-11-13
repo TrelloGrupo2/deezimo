@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   padding: 2em 5em;
+  @media (max-width: 425px) {
+    padding: 0
+  }
 `;
 export const TitleContainer = styled.div`
   h1 {
@@ -44,6 +47,9 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const YourWishlistButton = styled.a`
@@ -66,6 +72,10 @@ export const YourWishlistButtonContainer = styled.li`
   cursor: pointer;
   &:hover {
     opacity: 80%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+    padding: 0;
   }
 `;
 

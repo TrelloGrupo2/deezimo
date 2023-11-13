@@ -2,19 +2,27 @@ import styled from "styled-components";
 
 export const SectionGrid = styled.div`
   display: grid;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 3;
   grid-gap: 4;
+  @media (max-width: 425px) {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    margin-top: 3em;
+  }
 `;
 
 export const Content = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+`;
 
 export const GridComponent = styled.div`
   width: 90%;
@@ -23,6 +31,9 @@ export const GridComponent = styled.div`
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 425px) {
+    margin-top: 3em;
+  }
 `;
 
 export const GridImage = styled.img`

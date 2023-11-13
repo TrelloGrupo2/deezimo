@@ -18,11 +18,11 @@ export function HeaderComponent() {
         </TitleContainer>
         <LinksContainer>
           <ListLinks>
-            <li>
+            {/* <li>
               <HeaderLink>Contato</HeaderLink>
-            </li>
+            </li> */}
             <li>
-              <HeaderLink href="../Login">Entrar</HeaderLink>
+              <HeaderLink href="/lista">Entrar</HeaderLink>
             </li>
             <YourWishlistButtonContainer>
               <YourWishlistButton href="/lista">Sua Wishlist</YourWishlistButton>

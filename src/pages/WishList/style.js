@@ -5,14 +5,23 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const UserContent = styled.div`
   padding: 0 2rem;
-  width: 30%;
+  width: 44%;
   display: flex;
   justify-content: start;
   padding-left: 1em;
+  @media (max-width: 425px) {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
 `;
 
 

@@ -116,7 +116,7 @@ export function WishList() {
                 <ButtonCreateList
                   style={{ marginTop: "40px" }}
                 >
-                  <TextTitle>Adicionar Produto</TextTitle>
+                  <TextTitle href="/complete" >Adicionar Produto</TextTitle>
                 </ButtonCreateList>
               </FormContainer>
             </SectionModal>
