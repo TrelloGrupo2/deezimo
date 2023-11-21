@@ -28,7 +28,7 @@ export function Lp() {
               <h1>Deezimo, Sua plataforma de doações online</h1>
             </TitleContainerSlogan>
             <StartButtonContainer>
-              <StartButton>Começar</StartButton>
+              <StartButton href="/home">Começar</StartButton>
             </StartButtonContainer>
           </SloganContainer>
           <Elemento>

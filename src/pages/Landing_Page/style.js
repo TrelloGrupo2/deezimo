@@ -114,7 +114,7 @@ export const StartButtonContainer = styled.div`
   padding-top: 1em;
   width: 100%;
 `;
-export const StartButton = styled.button`
+export const StartButton = styled.a`
   cursor: pointer;
   width: 90%;
   font-size: 22px;
@@ -122,6 +122,7 @@ export const StartButton = styled.button`
   color: white;
   padding: 0.5em 2em;
   border-radius: 8px;
+  text-decoration: none;
   &:hover {
     opacity: 80%;
   }

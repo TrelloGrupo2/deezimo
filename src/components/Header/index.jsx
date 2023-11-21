@@ -22,7 +22,7 @@ export function HeaderComponent() {
               <HeaderLink>Contato</HeaderLink>
             </li> */}
             <li>
-              <HeaderLink href="/lista">Entrar</HeaderLink>
+              <HeaderLink href="/login">Entrar</HeaderLink>
             </li>
             <YourWishlistButtonContainer>
               <YourWishlistButton href="/lista">Sua Wishlist</YourWishlistButton>
