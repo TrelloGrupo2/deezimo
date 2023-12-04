@@ -57,7 +57,7 @@ export const GridInfo = styled.div`
   /* padding: 10px; */
   width: 100%;
   background: #292c2e;
-    border-radius: 12px;
+    /* border-radius: 0 0 12px; */
 `;
 
 export const TextValue = styled.span`
