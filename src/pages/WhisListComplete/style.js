@@ -13,6 +13,10 @@ export const SectionGrid = styled.div`
     grid-template-columns: 1fr;
     margin-top: 3em;
   }
+  @media (max-width: 1280px) {
+    grid-column: 2;
+    grid-template-columns: 1fr ;
+  }
 `;
 
 export const Content = styled.div`
@@ -34,6 +38,9 @@ export const GridComponent = styled.div`
   margin: 20px;
   height: 315px;
   @media (max-width: 425px) {
+    margin: 20px;
+  }
+  @media (max-width: 1280px) {
     margin: 20px;
   }
 `;
