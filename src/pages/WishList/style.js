@@ -13,12 +13,12 @@ export const Container = styled.div`
 
 export const UserContent = styled.div`
   padding: 0 2rem;
-  width: 44%;
+  width: 400px;
   display: flex;
   justify-content: start;
   padding-left: 1em;
   @media (max-width: 425px) {
-    width: 100%;
+      width: 400px;
     justify-content: center;
     padding: 0;
   }

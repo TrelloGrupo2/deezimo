@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
 
-
 import { HeaderComponent } from "../../components/Header";
 import {
   CloseModal,
@@ -11,11 +10,22 @@ import {
   ImageInputContainer,
   ImagePreview,
   InputLink,
+  InputName,
+  InputPrice,
   SectionModal,
   TitleModal,
 } from "../../components/ModalComponent/style";
+import { Text } from "../../components/ProgressbarComponent/style";
 import { UserGridComponent } from "../../components/UserGridComponent";
 import { TextTitle } from "../../styles/global";
+import {
+  GridComponent,
+  GridImage,
+  GridInfo,
+  SectionGrid,
+  TextValue,
+  VisitProduct,
+} from "../WhisListComplete/style";
 import { ButtonCreateList, Container } from "./style";
 
 const customStyles = {
@@ -32,8 +42,11 @@ const customStyles = {
 
 export function WishList() {
   const [modalIsOpen, setIsOpen] = useState(false);
-
   const [image, setImage] = useState(null);
+  const [link, setLink] = useState("");
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
+  const [products, setProducts] = useState([]);
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -47,6 +60,25 @@ export function WishList() {
     }
   };
 
+   const addProduct = () => {
+     const newProduct = {
+       image,
+       link,
+       name,
+       price,
+     };
+     setProducts([...products, newProduct]);
+
+     // Limpar os campos após adicionar o produto
+     setImage(null);
+     setLink("");
+     setName("");
+     setPrice("");
+
+     // Fechar o modal
+     closeModal();
+   };
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -58,24 +90,59 @@ export function WishList() {
       <HeaderComponent />
       <div style={{ width: "100%" }}>
         <Container>
-          <UserGridComponent />
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <TextTitle>
-              Você ainda não tem uma Lista de Desejo, <br /> para começar clique
-              em Adicionar Produto
-            </TextTitle>
-            <ButtonCreateList onClick={openModal} style={{ marginTop: "40px" }}>
+          <div style={{width: '50%'}}>
+            <UserGridComponent />
+            <ButtonCreateList
+              onClick={openModal}
+              style={{
+                display: products.length > 0 ? "block" : "none",
+                width: '300px',
+                margin: '20px'
+              }}
+            >
               <TextTitle>Adicionar Produto</TextTitle>
             </ButtonCreateList>
           </div>
+
+          {products.length > 0 ? (
+            <SectionGrid>
+              {products.map((product, index) => (
+                <GridComponent>
+                  <div style={{background: 'transparent', height: '220px', width: '280px'}}>
+                    <GridImage src={product.image} alt="aaa" />
+                  </div>
+                  <GridInfo>
+                    <Text>{product.name}</Text>
+                    <TextValue>{product.price}</TextValue>
+                    <VisitProduct href={product.link}>
+                      Visitar produto
+                    </VisitProduct>
+                  </GridInfo>
+                </GridComponent>
+              ))}
+            </SectionGrid>
+          ) : (
+            <div
+              style={{
+                width: "50%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <TextTitle>
+                Você ainda não tem uma Lista de Desejo, <br /> para começar
+                clique em Adicionar Produto
+              </TextTitle>
+              <ButtonCreateList
+                onClick={openModal}
+                style={{ marginTop: "40px" }}
+              >
+                <TextTitle>Adicionar Produto</TextTitle>
+              </ButtonCreateList>
+            </div>
+          )}
 
           <Modal
             isOpen={modalIsOpen}
@@ -110,13 +177,27 @@ export function WishList() {
                   <FileInput type="file" onChange={handleFileChange} />
                   Adicione sua imagem
                 </ImageInputContainer>
-                <InputLink placeholder="Insira o link do produto" />
-                <InputLink placeholder="Insira o nome do produto" />
-                <InputLink style={{width: '30%'}} placeholder="Insira o valor do produto" />
+                <InputLink
+                  value={link} // Adicione o valor do estado local ao campo de entrada
+                  onChange={(e) => setLink(e.target.value)}
+                  placeholder="Insira o link do produto"
+                />
+                <InputName
+                  value={name} // Adicione o valor do estado local ao campo de entrada
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Insira o nome do produto"
+                />
+                <InputPrice
+                  value={price} // Adicione o valor do estado local ao campo de entrada
+                  onChange={(e) => setPrice(e.target.value)}
+                  style={{ width: "30%" }}
+                  placeholder="Insira o valor do produto"
+                />
                 <ButtonCreateList
+                  onClick={addProduct}
                   style={{ marginTop: "40px" }}
                 >
-                  <TextTitle href="/complete" >Adicionar Produto</TextTitle>
+                  <TextTitle>Adicionar Produto</TextTitle>
                 </ButtonCreateList>
               </FormContainer>
             </SectionModal>

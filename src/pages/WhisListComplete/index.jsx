@@ -3,13 +3,13 @@ import { Text } from "../../components/ProgressbarComponent/style";
 import { UserGridComponent } from "../../components/UserGridComponent";
 import { Container } from "../WishList/style";
 import {
-    Content,
-    GridComponent,
-    GridImage,
-    GridInfo,
-    SectionGrid,
-    TextValue,
-    VisitProduct,
+  Content,
+  GridComponent,
+  GridImage,
+  GridInfo,
+  SectionGrid,
+  TextValue,
+  VisitProduct,
 } from "./style";
 
 export function WishListComplete() {
@@ -56,11 +56,11 @@ export function WishListComplete() {
                   <GridComponent>
                     <GridImage src="https://picsum.photos/231/138" alt="aaa" />
                     <GridInfo>
-                      <Text>
-                       {item.name}
-                      </Text>
-                            <TextValue>{ item.value}</TextValue>
-                      <VisitProduct href={item.link}>Visitar produto</VisitProduct>
+                      <Text>{item.name}</Text>
+                      <TextValue>{item.value}</TextValue>
+                      <VisitProduct href={item.link}>
+                        Visitar produto
+                      </VisitProduct>
                     </GridInfo>
                   </GridComponent>
                 );

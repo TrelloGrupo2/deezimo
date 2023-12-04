@@ -25,14 +25,16 @@ export const Content = styled.div`
 `;
 
 export const GridComponent = styled.div`
-  width: 90%;
+  width: 283px;
   background: #292c2e;
   margin: 0 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  height: 315px;
   @media (max-width: 425px) {
-    margin-top: 3em;
+    margin: 20px;
   }
 `;
 
@@ -54,9 +56,12 @@ export const GridInfo = styled.div`
 export const TextValue = styled.span`
   margin-top: 10px;
   color: #6776ff;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 700;
   text-align: left;
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 `;
 
 export const VisitProduct = styled.a`

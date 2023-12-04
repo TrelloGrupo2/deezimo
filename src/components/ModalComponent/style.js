@@ -67,6 +67,41 @@ export const FormContainer = styled.div`
     align-items: center;
 `
 
+export const InputName = styled.input`
+  width: 70%;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  background: #292c2e;
+  height: 50px;
+  padding-left: 10px;
+  margin-top: 2em;
+  font-size: 18px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  InputLink:placeholder {
+    padding-left: 10px;
+  }
+`;
+
+export const InputPrice = styled.input`
+  width: 70%;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  background: #292c2e;
+  height: 50px;
+  padding-left: 10px;
+  margin-top: 2em;
+  font-size: 18px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  InputLink:placeholder {
+    padding-left: 10px;
+  }
+`;
+
+
 export const InputLink = styled.input`
   width: 70%;
   color: #fff;
